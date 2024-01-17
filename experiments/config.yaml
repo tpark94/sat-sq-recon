@@ -1,0 +1,57 @@
+ROOT: '/media/shared/Jeff/CAESAR/satellite-sq-recon'
+OUTPUT_DIR: 'output'
+LOG_DIR: 'log'
+LOG_TENSORBOARD: True
+SEED: 42
+AUTO_RESUME: False
+CUDA: True
+AMP: False              # Diff. renderer does not like AMP
+VERBOSE: True
+EXP_NAME: 'exp'
+DIST:
+  MULTIPROCESSING_DISTRIBUTED: False
+  BACKEND: 'nccl'
+  RANK: 0
+CUDNN:
+  BENCHMARK: True
+  DETERMINISTIC: False
+  ENABLED: True
+DATASET:
+  ROOT: '/home/jeffpark/SLAB/Dataset'
+  DATANAME: 'spe3r'
+  SPLIT_CSV: 'splits.csv'
+  CAMERA: 'camera.json'
+  IMAGE_SIZE: [128, 128]
+  NUM_POINTS_ON_MESH: 2500
+  NUM_POINTS_IN_MESH: 10000
+TRAIN:
+  BEGIN_EPOCH: 0
+  END_EPOCH: 100
+  VALID_FREQ: 5
+  BATCH_SIZE_PER_GPU: 32
+  OPTIMIZER: 'AdamW'
+  SCHEDULER: 'cosine'
+  LR: 1.0e-4
+  WORKERS: 4
+TEST:
+  NUM_REPEATS: 1
+  BATCH_SIZE_PER_GPU: 64
+MODEL:
+  PRETRAIN_FILE: 'model_best.pth.tar'
+  RENDER_SIGMA: 1.0e-6
+  ICOSPHERE_LEVEL: 3
+  LATENT_DIM: 256
+  HIDDEN_DIM: 512
+  NUM_MAX_PRIMITIVES: 8
+  APPLY_TAPER: True
+  USE_DUAL_SQ: True
+  USE_TRUE_POSE_RENDER: True
+LOSS:
+  RECON_TYPE:   ['chamfer', 'occupancy', 'reproj']
+  RECON_WEIGHT: [10.0, 1.0, 1.0]
+  POSE_TYPE:    ['trans', 'rot']
+  POSE_WEIGHT:  [0.1, 0.1]
+  REG_TYPE:     ['overlap', 'taper']
+  REG_WEIGHT:   [0.1, 0.01]
+  SHARPNESS: 10
+  BETA_OVERLAP: 1.25

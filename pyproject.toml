@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "sat-sq-recon"
+version = "0.1.0"
+description = "Rapid Abstraction of Spacecraft 3D Structure from Single 2D Image"
+authors = ["Tae Ha 'Jeff' Park <tpark94@stanford.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+#torch = "^2.0.1"
+#torchvision = "^0.15.2"
+torch = { url = "https://download.pytorch.org/whl/cu118/torch-2.1.1%2Bcu118-cp310-cp310-linux_x86_64.whl" }
+torchvision = { url = "https://download.pytorch.org/whl/cu118/torchvision-0.16.1%2Bcu118-cp310-cp310-linux_x86_64.whl" }
+logging = "^0.4.9.6"
+timm = "^0.9.7"
+matplotlib = "^3.8.0"
+opencv-python-headless = "^4.8.1.78"
+pytorch3d = { url = "https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu118_pyt211/pytorch3d-0.7.5-cp310-cp310-linux_x86_64.whl"}
+plotly = "^5.17.0"
+albumentations = "^1.3.1"
+tensorboard = "^2.15.0"
+pandas = "^2.1.3"
+trimesh = "^4.0.4"
+cython = "^3.0.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
