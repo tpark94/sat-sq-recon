@@ -40,7 +40,7 @@ This repository uses [poetry](https://python-poetry.org) to manage virtual envir
     python setup.py build_ext --inplace
     ```
 
-5. [Optional] Get pre-trained model from [here](https://office365stanford-my.sharepoint.com/:u:/g/personal/tpark94_stanford_edu/EYkELKEIIWZElmf1h9Rhfi0BHRjlyMJG4_5_ras8i9UOwg?e=YyxDCQ). It is trained with `M = 8` primitives.
+5. [Optional] Get pre-trained model from [here](https://office365stanford-my.sharepoint.com/:f:/g/personal/tpark94_stanford_edu/EuF0V98AUXJOtSDXVtuf7FgBvSe-hF6FPw1_-Jqu-qlwgQ). It is trained with `M = 8` primitives for both RGH and grayscale image inputs.
 
 
 ## SPE3R
