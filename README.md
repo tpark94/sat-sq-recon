@@ -2,6 +2,10 @@
 
 This repository is developed by Tae Ha "Jeff" Park at [Space Rendezvous Laboratory (SLAB)](https://slab.stanford.edu) of Stanford University.
 
+## Updates
+
+- [2024/03/18] The udpated dataset (v1.1) is now available at the [Stanford Digital Repository](https://purl.stanford.edu/pk719hm4806). This version corrects bugs with the pose labels in the initial deposit, so the users are encouraged to download the updated version. Please see `UPDATES.md` inside the new dataset for a detailed update log.
+
 ## Introduction
 
 This is the official PyTorch implementation of the paper titled [Rapid Abstraction of Spacecraft 3D Structure from Single 2D Image](https://arc.aiaa.org/doi/10.2514/6.2024-2768).
