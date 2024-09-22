@@ -5,6 +5,7 @@ This repository is developed by Tae Ha "Jeff" Park at [Space Rendezvous Laborato
 ## Updates
 
 - [2024/03/18] The udpated dataset (v1.1) is now available at the [Stanford Digital Repository](https://purl.stanford.edu/pk719hm4806). This version corrects bugs with the pose labels in the initial deposit, so the users are encouraged to download the updated version. Please see `UPDATES.md` inside the new dataset for a detailed update log.
+- [2024/09/22] Updated the link to the pre-trained models.
 
 ## Introduction
 
@@ -40,8 +41,7 @@ This repository uses [poetry](https://python-poetry.org) to manage virtual envir
     python setup.py build_ext --inplace
     ```
 
-5. [Optional] Get pre-trained model from [here](https://office365stanford-my.sharepoint.com/:f:/g/personal/tpark94_stanford_edu/EuF0V98AUXJOtSDXVtuf7FgBvSe-hF6FPw1_-Jqu-qlwgQ). It is trained with `M = 8` primitives for both RGH and grayscale image inputs.
-
+5. [Optional] Get pre-trained model from [here](https://1drv.ms/f/c/fa28139a835eeb46/Evpp5SltMNNFqX_W26jaCzAB_UF6knvqKmkF-143sSAMVw). It is trained with `M = 8` primitives for both RGH and grayscale image inputs.
 
 ## SPE3R
 
